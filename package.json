@@ -4,6 +4,9 @@
     "description": "useful logger for node",
     "main": "index.js",
     "scripts": {
+        "remove": "rm -rf logs",
+        "play": "node playground.js",
+        "start": "npm run remove && npm run play",
         "test": "npm run test",
         "deploy": "rm -rf logs && git add . && git commit -m 'added' && git push && npm version patch && npm publish"
     },
