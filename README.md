@@ -1,6 +1,15 @@
 # code_clarity
 
-## How do we make code straightfoward? I think a person who did this really well was the guy who developed total.js, let's check that out. 
+## How do we make code straightfoward?
+
+### Break things down, this is a bit like... writing cantonese letters. the more you do it, the better you get. 
+
+### slow down. it takes a while. practice the right things. draw out the outline of the code. study the architecture and the organization. 
+
+Let's say this is a presentation, how would you do it? 
+
+- think with the end goal in mind: writing out the commands that you would implement 
+
 
 ![terminal](https://dl.dropbox.com/s/qp98hxolw6hsj45/terminal.png)
 ![files](https://dl.dropbox.com/s/j3dc9g93e6lecqq/files.png)
