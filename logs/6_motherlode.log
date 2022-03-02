@@ -1,0 +1,291 @@
+[31m~ 09:52:01 - error: hi ~[39m
+[33m~ 09:52:01 - warn: problem ~[39m
+[32m~ 09:52:01 - info: hi ~[39m
+[33m~ 09:52:01 - notice: hi ~[39m
+[34m~ 09:52:01 - debug: hi ~[39m
+[31m~ error: hi [39m
+[31m09:52:40 ~[39m
+[33m~ warn: problem [39m
+[33m09:52:40 ~[39m
+[32m~ info: hi [39m
+[32m09:52:40 ~[39m
+[33m~ notice: hi [39m
+[33m09:52:40 ~[39m
+[34m~ debug: hi [39m
+[34m09:52:40 ~[39m
+[31m~ error ~ [39m
+[31mhi [39m
+[31m09:52:59 ~[39m
+[33m~ warn ~ [39m
+[33mproblem [39m
+[33m09:52:59 ~[39m
+[32m~ info ~ [39m
+[32mhi [39m
+[32m09:52:59 ~[39m
+[33m~ notice ~ [39m
+[33mhi [39m
+[33m09:52:59 ~[39m
+[34m~ debug ~ [39m
+[34mhi [39m
+[34m09:52:59 ~[39m
+[31m~ error: {msg.timestamp} ~ [39m
+[31mhi [39m
+[31m$~[39m
+[33m~ warn: {msg.timestamp} ~ [39m
+[33mproblem [39m
+[33m$~[39m
+[32m~ info: {msg.timestamp} ~ [39m
+[32mhi [39m
+[32m$~[39m
+[33m~ notice: {msg.timestamp} ~ [39m
+[33mhi [39m
+[33m$~[39m
+[34m~ debug: {msg.timestamp} ~ [39m
+[34mhi [39m
+[34m$~[39m
+[31m~ error: 09:53:21 ~ [39m
+[31mhi [39m
+[31m$~[39m
+[33m~ warn: 09:53:21 ~ [39m
+[33mproblem [39m
+[33m$~[39m
+[32m~ info: 09:53:21 ~ [39m
+[32mhi [39m
+[32m$~[39m
+[33m~ notice: 09:53:21 ~ [39m
+[33mhi [39m
+[33m$~[39m
+[34m~ debug: 09:53:21 ~ [39m
+[34mhi [39m
+[34m$~[39m
+[31m~ error: 09:54:56 ~ [39m
+[31mhi [39m
+[31m~[39m
+[33m~ warn: 09:54:56 ~ [39m
+[33mproblem [39m
+[33m~[39m
+[32m~ info: 09:54:56 ~ [39m
+[32mhi [39m
+[32m~[39m
+[33m~ notice: 09:54:56 ~ [39m
+[33mhi [39m
+[33m~[39m
+[34m~ debug: 09:54:56 ~ [39m
+[34mhi [39m
+[34m~[39m
+[31m~ error: 09:55:26 ~ [39m
+[31mhi [39m
+[31m~[39m
+[33m~ warn: 09:55:26 ~ [39m
+[33mproblem [39m
+[33m~[39m
+[32m~ info: 09:55:26 ~ [39m
+[32mhi [39m
+[32m~[39m
+[33m~ notice: 09:55:26 ~ [39m
+[33mhi [39m
+[33m~[39m
+[34m~ debug: 09:55:26 ~ [39m
+[34mhi [39m
+[34m~[39m
+[31m~ error: 09:55:56 ~ [39m
+[31mhi [39m
+[31m~[39m
+[33m~ warn: 09:55:56 ~ [39m
+[33mproblem [39m
+[33m~[39m
+[32m~ info: 09:55:56 ~ [39m
+[32mhi [39m
+[32m~[39m
+[33m~ notice: 09:55:56 ~ [39m
+[33mhi [39m
+[33m~[39m
+[34m~ debug: 09:55:56 ~ [39m
+[34mhi [39m
+[34m~[39m
+[31m~ error: 09:56:09 ~ [39m
+[31m	hi [39m
+[31m~[39m
+[33m~ warn: 09:56:09 ~ [39m
+[33m	problem [39m
+[33m~[39m
+[32m~ info: 09:56:09 ~ [39m
+[32m	hi [39m
+[32m~[39m
+[33m~ notice: 09:56:09 ~ [39m
+[33m	hi [39m
+[33m~[39m
+[34m~ debug: 09:56:09 ~ [39m
+[34m	hi [39m
+[34m~[39m
+[31m~ error: 09:56:31 ~ [39m
+[31m	hi [39m
+[31m~[39m
+[33m~ warn: 09:56:31 ~ [39m
+[33m	problem [39m
+[33m~[39m
+[32m~ info: 09:56:31 ~ [39m
+[32m	hi [39m
+[32m~[39m
+[33m~ notice: 09:56:31 ~ [39m
+[33m	hi [39m
+[33m~[39m
+[34m~ debug: 09:56:31 ~ [39m
+[34m	hi [39m
+[34m~[39m
+[31m~ error: 09:56:40 ~ [39m
+[31m	hi [39m
+[31m~[39m
+[33m~ warn: 09:56:40 ~ [39m
+[33m	problem [39m
+[33m~[39m
+[32m~ info: 09:56:40 ~ [39m
+[32m	hi [39m
+[32m~[39m
+[33m~ notice: 09:56:40 ~ [39m
+[33m	hi [39m
+[33m~[39m
+[34m~ debug: 09:56:40 ~ [39m
+[34m	hi [39m
+[34m~[39m
+[31m~ error: 09:56:50 ~ [39m
+[31m	hi [39m
+[31m~[39m
+[33m~ warn: 09:56:50 ~ [39m
+[33m	problem [39m
+[33m~[39m
+[32m~ info: 09:56:50 ~ [39m
+[32m	hi [39m
+[32m~[39m
+[33m~ notice: 09:56:50 ~ [39m
+[33m	hi [39m
+[33m~[39m
+[34m~ debug: 09:56:50 ~ [39m
+[34m	hi [39m
+[34m~[39m
+[31m~ error: 03:02, 09:57:22 ~ [39m
+[31m	hi [39m
+[31m~[39m
+[33m~ warn: 03:02, 09:57:22 ~ [39m
+[33m	problem [39m
+[33m~[39m
+[32m~ info: 03:02, 09:57:22 ~ [39m
+[32m	hi [39m
+[32m~[39m
+[33m~ notice: 03:02, 09:57:22 ~ [39m
+[33m	hi [39m
+[33m~[39m
+[34m~ debug: 03:02, 09:57:22 ~ [39m
+[34m	hi [39m
+[34m~[39m
+[31m~ error: 02/03/2022, 09:57:37 ~ [39m
+[31m	hi [39m
+[31m~[39m
+[33m~ warn: 02/03/2022, 09:57:37 ~ [39m
+[33m	problem [39m
+[33m~[39m
+[32m~ info: 02/03/2022, 09:57:37 ~ [39m
+[32m	hi [39m
+[32m~[39m
+[33m~ notice: 02/03/2022, 09:57:37 ~ [39m
+[33m	hi [39m
+[33m~[39m
+[34m~ debug: 02/03/2022, 09:57:37 ~ [39m
+[34m	hi [39m
+[34m~[39m
+[31m~ show: 02/03/2022, 09:58:42 ~ [39m
+[31m	hi [39m
+[31m~[39m
+[33m~ yo: 02/03/2022, 09:58:42 ~ [39m
+[33m	problem [39m
+[33m~[39m
+[32m~ yo: 02/03/2022, 09:58:42 ~ [39m
+[32m	hi [39m
+[32m~[39m
+[33m~ yo: 02/03/2022, 09:58:42 ~ [39m
+[33m	hi [39m
+[33m~[39m
+[34m~ yo: 02/03/2022, 09:58:42 ~ [39m
+[34m	hi [39m
+[34m~[39m
+error: 	hi {"timestamp":"02/03/2022, 10:00:23"}
+warn: 	problem {"timestamp":"02/03/2022, 10:00:23"}
+info: 	hi {"timestamp":"02/03/2022, 10:00:23"}
+notice: 	hi {"timestamp":"02/03/2022, 10:00:23"}
+debug: 	hi {"timestamp":"02/03/2022, 10:00:23"}
+[31m~ yo: 02/03/2022, 10:00:34 ~ [39m
+[31m	hi [39m
+[31m~[39m
+[33m~ yo: 02/03/2022, 10:00:34 ~ [39m
+[33m	problem [39m
+[33m~[39m
+[32m~ yo: 02/03/2022, 10:00:34 ~ [39m
+[32m	hi [39m
+[32m~[39m
+[33m~ yo: 02/03/2022, 10:00:34 ~ [39m
+[33m	hi [39m
+[33m~[39m
+[34m~ STEP: 02/03/2022, 10:00:34 ~ [39m
+[34m	hi [39m
+[34m~[39m
+[31merror[39m: hi
+[34mdebug[39m: hi
+[31mupset[39m: hi
+[34mdebug[39m: hi
+[31mupset[39m: hi
+[34mproblem[39m: hi
+[31mupset[39m: hi
+[34mproblem[39m: problem
+[33m[3mupset[23m[39m: hi
+[46m[31m[1mproblem[22m[39m[49m: problem
+[33m[3mupset[23m[39m: hi
+[46m[31m[1mproblem[22m[39m[49m: problem
+[33m[3mupset[23m[39m: hi
+[46m[31m[1mproblem[22m[39m[49m: problem
+[33m[3mupset[23m[39m: hi
+[46m[31m[1mproblem[22m[39m[49m: problem
+[33m[3mupset[23m[39m: hi
+[46m[31m[1mproblem[22m[39m[49m: problem
+[33m[3mupset[23m[39m: hi
+[46m[31m[1mproblem[22m[39m[49m: problem
+[33m[3mupset[23m[39m: hi
+[46m[31m[1mproblem[22m[39m[49m: problem
+[33m[3mupset[23m[39m: hi
+[46m[31m[1mproblem[22m[39m[49m: problem
+[34m[1mupset[22m[39m: hi
+[46m[31m[1mproblem[22m[39m[49m: problem
+[90m[1mupset[22m[39m: hi
+[46m[31m[1mproblem[22m[39m[49m: problem
+[47m[90m[1mupset[22m[39m[49m: hi
+[46m[31m[1mproblem[22m[39m[49m: problem
+[47m[90m[1mupset[22m[39m[49m: hi
+[46m[31m[1mproblem[22m[39m[49m: problem
+[47m[90m[1mupset[22m[39m[49m: hi
+[31m[1mproblem[22m[39m: problem
+[47m[90m[1mupset[22m[39m[49m: hi
+[31m[1mproblem[22m[39m: problem
+[47m[90m[1mupset[22m[39m[49m: hi
+[31m[1mproblem[22m[39m: problem
+[47m[90m[1mupset[22m[39m[49m: hi
+[31m[1mproblem[22m[39m: problem
+[47m[90m[1mupset[22m[39m[49m: hi
+[31m[1mproblem[22m[39m: problem
+[47m[90m[1mupset[22m[39m[49m: hi
+[31m[1mproblem[22m[39m: problem
+[47m[90m[1mupset[22m[39m[49m: hi
+[31m[1mproblem[22m[39m: problem
+[47m[90m[1mupset[22m[39m[49m: hi
+[31m[1mproblem[22m[39m: problem
+[47m[90m[1mupset[22m[39m[49m: hi
+[31m[1mproblem[22m[39m: problem
+[47m[90m[1mupset[22m[39m[49m: hi
+[31m[1mproblem[22m[39m: problem
+[47m[90m[1mupset[22m[39m[49m: hi
+[31m[1mproblem[22m[39m: problem
+[47m[90m[1mupset[22m[39m[49m: hi
+[31m[1mproblem[22m[39m: problem
+[47m[90m[1mupset[22m[39m[49m: hi
+[31m[1mproblem[22m[39m: problem
+[47m[90m[1mstory[22m[39m[49m: hi
+[31m[1mproblem[22m[39m: problem
+[47m[90m[1mstory[22m[39m[49m: story
