@@ -10,6 +10,9 @@
     "keywords": [
         "logger",
         "clarity",
+        "winston",
+        "terminal",
+        "colors",
         "code"
     ],
     "author": "lezzles11",
