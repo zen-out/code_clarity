@@ -1,8 +1,8 @@
 # Logger 
 
-![files](images/files.png)
+![files](./images/files.png)
 
-![terminal](images/terminal.png)
+![terminal](./images/terminal.png)
 ```js
 
 const { winston, see, createLogger } = require("code_clarity")
