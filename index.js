@@ -1,14 +1,19 @@
-const winston = require("winston")
-    //
-    // Logging levels
-    //
+var winston = require('winston');
+const { formatDateTime } = require("format_date_time_moment/node")
+
+
+let date = formatDateTime.format(new Date(), "ll")
+let removeSpaces = date.replaceAll(" ", "")
+let getDate = removeSpaces.replaceAll(",", "-")
+console.log("🚀 ~ file: index.js ~ line 8 ~ getDate", getDate)
+
 const config = {
     levels: {
         story: 0,
         problem: 1,
         should: 2,
         is: 3,
-        think: 4,
+        how: 4,
         step: 6,
         motherlode: 7
     },
@@ -17,7 +22,7 @@ const config = {
         problem: 'bold red',
         should: 'bold magenta',
         is: 'bold yellow',
-        think: 'bold white',
+        how: 'bold white',
         step: 'bold cyan',
         motherlode: 'bold green'
     }
@@ -25,24 +30,143 @@ const config = {
 
 winston.addColors(config.colors);
 
-const see = module.exports = winston.createLogger({
+function createLogger(feature) {
+
+    const config = {
+        levels: {
+            story: 0,
+            problem: 1,
+            should: 2,
+            is: 3,
+            how: 4,
+            step: 6,
+            motherlode: 7
+        },
+        colors: {
+            story: 'bold gray whiteBG',
+            problem: 'bold red',
+            should: 'bold magenta',
+            is: 'bold yellow',
+            how: 'bold white',
+            step: 'bold cyan',
+            motherlode: 'bold green'
+        }
+    };
+
+    winston.addColors(config.colors);
+
+    return winston.createLogger({
+        levels: config.levels,
+        format: winston.format.combine(
+            winston.format.label("label"),
+            winston.format.colorize(),
+            winston.format.simple(),
+        ),
+        transports: [
+            new winston.transports.Console(), new winston.transports.File({
+                level: "story",
+                filename: `logs/${feature}/${getDate}/${getDate}_userStory.log`,
+                format: winston.format.json()
+
+            }),
+            new winston.transports.File({
+                level: "problem",
+                filename: `logs/${feature}/${getDate}/1_problem.log`,
+                format: winston.format.json()
+
+            }), new winston.transports.File({
+                level: "should",
+                filename: `logs/${feature}/${getDate}/2_should.log`,
+                format: winston.format.json()
+            }),
+            new winston.transports.File({
+                level: "is",
+                filename: `logs/${feature}/${getDate}/3_is.log`,
+                format: winston.format.json()
+            }),
+            new winston.transports.File({
+                level: "how",
+                filename: `logs/${feature}/${getDate}/4_how.log`,
+                format: winston.format.json()
+            }),
+            new winston.transports.File({
+                level: "step",
+                filename: `logs/${feature}/${getDate}/5_step.log`,
+                format: winston.format.json()
+            }),
+            new winston.transports.File({
+                level: "motherlode",
+                filename: `logs/${feature}/${getDate}/6_sims3.log`,
+                format: winston.format.json()
+            }),
+        ],
+        level: 'motherlode',
+        exceptionHandlers: [
+            new winston.transports.File({
+                format: winston.format.json(),
+                filename: `logs/${feature}/${getDate}/7_exceptions.log`
+            })
+        ],
+        rejectionHandlers: [
+            new winston.transports.File({
+                format: winston.format.json(),
+                filename: `logs/${feature}/${getDate}/8_rejections.log`
+            })
+        ]
+    })
+}
+const see = winston.createLogger({
     levels: config.levels,
     format: winston.format.combine(
         winston.format.colorize(),
-        winston.format.simple()
+        winston.format.simple(),
     ),
     transports: [
         new winston.transports.Console(), new winston.transports.File({
-            level: "problem",
-            filename: "logs/6_motherlode.log"
+            level: "story",
+            filename: "logs/0_userStory.log",
+            format: winston.format.json()
 
-        }), new winston.transports.File({ level: "should", filename: "logs/0_story.log" }),
-        new winston.transports.File({ level: "is", filename: "logs/1_problem.log" }),
-        new winston.transports.File({ level: "think", filename: "logs/2_whatshouldbe.log" }),
-        new winston.transports.File({ level: "step", filename: "logs/3_whatactuallyis.log" }),
-        new winston.transports.File({ level: "motherload", filename: "logs/cheat.log" }),
+        }),
+        new winston.transports.File({
+            level: "problem",
+            filename: "logs/1_problem.log",
+            format: winston.format.json()
+
+        }), new winston.transports.File({
+            level: "should",
+            filename: "logs/2_should.log",
+            format: winston.format.json()
+        }),
+        new winston.transports.File({
+            level: "is",
+            filename: "logs/3_is.log",
+            format: winston.format.json()
+        }),
+        new winston.transports.File({
+            level: "how",
+            filename: "logs/4_how.log",
+            format: winston.format.json()
+        }),
+        new winston.transports.File({
+            level: "step",
+            filename: "logs/5_step.log",
+            format: winston.format.json()
+        }),
+        new winston.transports.File({
+            level: "motherlode",
+            filename: "logs/6_sims3.log",
+            format: winston.format.json()
+        }),
     ],
-    level: 'motherlode'
+    level: 'motherlode',
+    exceptionHandlers: [
+        new winston.transports.File({
+            format: winston.format.json(),
+            filename: 'logs/7_exceptions.log'
+        })
+    ]
+
 });
 
-module.exports = { see }
+module.exports = { winston, createLogger, see }
