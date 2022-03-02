@@ -1,8 +1,11 @@
-# Logger 
+# code_clarity
+### inspired by Zedd's Clarity
 
-![files](./images/files.png)
 
-![terminal](./images/terminal.png)
+
+![files]("https://dl.dropbox.com/s/j3dc9g93e6lecqq/files.png")
+
+![terminal]("https://dl.dropbox.com/s/qp98hxolw6hsj45/terminal.png")
 ```js
 const { winston, see, createLogger } = require("code_clarity")
 let notify = createLogger("notifyLogger")
