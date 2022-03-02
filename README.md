@@ -3,9 +3,9 @@
 
 
 
-![files]("https://dl.dropbox.com/s/j3dc9g93e6lecqq/files.png")
+![files]("https://dl.dropbox.com/s/j3dc9g93e6lecqq/files.png?raw=1")
 
-![terminal]("https://dl.dropbox.com/s/qp98hxolw6hsj45/terminal.png")
+![terminal]("https://dl.dropbox.com/s/qp98hxolw6hsj45/terminal.png?raw=1")
 ```js
 const { winston, see, createLogger } = require("code_clarity")
 let notify = createLogger("notifyLogger")
