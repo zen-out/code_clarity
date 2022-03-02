@@ -5,7 +5,7 @@
 ![files](https://dl.dropbox.com/s/j3dc9g93e6lecqq/files.png)
 
 ```js
-const { winston, see, createLogger } = require("./index.js")
+const { winston, see, createLogger } = require("code_clarity")
 let notify = createLogger("notifyLogger")
     // original logger
 winston.loggers.add("see", see)
