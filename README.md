@@ -2,7 +2,7 @@
 
 ## How do we make code straightfoward?
 
-### Break things down, this is a bit like... writing cantonese letters. the more you do it, the better you get. 
+### Break things down, this is a bit like... writing. the more you do it, the better you get. 
 
 ### slow down. it takes a while. practice the right things. draw out the outline of the code. study the architecture and the organization. 
 
