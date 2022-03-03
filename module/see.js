@@ -19,31 +19,31 @@ const see = winston.createLogger({
         new winston.transports.Console(),
         new winston.transports.File({
             // level: 'step',
-            filename: `upsets/${getDate}/problems.log`,
-            format: winston.format.simple()
+            filename: `code_clarity/focus/${getDate}.log`,
+            format: winston.format.json()
         }),
         new winston.transports.File({
             level: 'motherlode',
-            filename: `upsets/${getDate}/sims3.log`,
-            format: winston.format.simple()
+            filename: `code_clarity/cheats/${getDate}.log`,
+            format: winston.format.json()
         }),
     ],
     level: 'motherlode',
     exceptionHandlers: [
         new winston.transports.File({
             format: winston.format.json(),
-            filename: `upsets/${getDate}/exceptions.log`
+            filename: `code_clarity/ exceptions / ${getDate}.log`
         })
     ]
 });
 
 module.exports = { see }
-see.problem("hi")
-see.problem("not being able to print out log messages in root folder")
-see.should("should be able to specify a root directory")
-see.story("hi")
-see.should("hi")
-see.is("hi")
-see.how("how")
-see.step("step")
-see.motherlode("motherlode")
+    // see.problem("hi")
+    // see.problem("not being able to print out log messages in root folder")
+    // see.should("should be able to specify a root directory")
+    // see.story("hi")
+    // see.should("hi")
+    // see.is("hi")
+    // see.how("how")
+    // see.step("step")
+    // see.motherlode("motherlode")

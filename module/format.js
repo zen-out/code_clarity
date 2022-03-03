@@ -39,11 +39,20 @@ const myFormat = winston.format.printf(({ level, message, timestamp, ...metadata
         } else if (level === "how") {
             level = colors.cyan(level)
             message = teal(message)
+        } else if (level === "start") {
+            readableTime = teal(readableTime)
+            level = colors.cyan(level)
+            message = pink(message)
+        } else if (level === "end") {
+            readableTime = teal(readableTime)
+            level = colors.cyan(level)
+            message = pink(message)
         } else {
             level = colors.blue(level)
-            message = blue(message)
+            message = pink(message)
         }
     }
+
 
     let msg = `${readableTime} [${level}] : ${message}`
     if (metadata) {
