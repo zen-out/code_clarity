@@ -7,7 +7,7 @@
         "play": "node playground.js",
         "start": "node moveFile.js && npm run play",
         "test": "npm run test",
-        "deploy": "rm -rf logs && git add . && git commit -m 'added' && git push && npm version patch && npm publish"
+        "deploy": "git add . && git commit -m 'added' && git push && npm version patch && npm publish"
     },
     "keywords": [
         "logger",

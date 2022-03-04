@@ -22,89 +22,35 @@ const hourglass = winston.createLogger({
 })
 
 const see = winston.createLogger({
-        levels: {
-            done: 0,
-            motherlode: 1,
-            problem: 2,
-            is: 3,
-            step: 4,
-            how: 5,
-            should: 6,
-            story: 7,
-        },
-        format: winston.format.combine(winston.format.splat(),
-            winston.format.timestamp(),
-            myFormat),
-        transports: [
-            new winston.transports.Console({ level: "story" }),
-            new winston.transports.File({
-                filename: `focus/${getDate}/focus.log`,
-                format: winston.format.json(),
-                handleExceptions: true,
-                handleRejections: true
-            }),
-            new winston.transports.File({
-                level: 'motherlode',
-                filename: `focus/${getDate}/done.log`,
-                format: winston.format.json()
-            }),
-        ],
-        level: 'how',
-    })
-    // const hourglass = winston.createLogger({
-    //     levels: {
-    //         start: 0,
-    //         end: 1,
-    //     },
-    //     format: winston.format.combine(winston.format.splat(),
-    //         winston.format.timestamp(),
-    //         myFormat),
-    //     transports: [
-    //         new winston.transports.Console({ level: "end" }),
-    //         new winston.transports.File({
-    //             level: 'end',
-    //             filename: `focus/${getDate}/timer.log`,
-    //             format: winston.format.json()
-    //         })
-    //     ],
-    // });
-
-
-// const see = winston.createLogger({
-//     levels: {
-//         done: 0,
-//         motherlode: 1,
-//         problem: 2,
-//         is: 3,
-//         step: 4,
-//         how: 5,
-//         should: 6,
-//         story: 7,
-//     },
-//     format: winston.format.combine(winston.format.splat(),
-//         winston.format.timestamp(),
-//         myFormat),
-//     transports: [
-//         new winston.transports.Console(),
-//         new winston.transports.File({
-//             filename: `focus/${getDate}/focus.log`,
-//             format: winston.format.json()
-//         }),
-//         new winston.transports.File({
-//             level: 'motherlode',
-//             filename: `focus/${getDate}/done.log`,
-//             format: winston.format.json()
-//         }),
-//     ],
-//     level: 'story',
-//     exceptionHandlers: [
-//         new winston.transports.File({
-//             format: winston.format.json(),
-//             filename: `focus/${getDate}/errors.log`
-//         })
-//     ],
-
-// });
+    levels: {
+        done: 0,
+        motherlode: 1,
+        problem: 2,
+        is: 3,
+        step: 4,
+        how: 5,
+        should: 6,
+        story: 7,
+    },
+    format: winston.format.combine(winston.format.splat(),
+        winston.format.timestamp(),
+        myFormat),
+    transports: [
+        new winston.transports.Console({ level: "story" }),
+        new winston.transports.File({
+            filename: `focus/${getDate}/focus.log`,
+            format: winston.format.json(),
+            handleExceptions: true,
+            handleRejections: true
+        }),
+        new winston.transports.File({
+            level: 'motherlode',
+            filename: `focus/${getDate}/done.log`,
+            format: winston.format.json()
+        }),
+    ],
+    level: 'how',
+})
 
 module.exports = { see, hourglass }
 
