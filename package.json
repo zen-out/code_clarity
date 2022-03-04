@@ -1,6 +1,6 @@
 {
     "name": "code_clarity",
-    "version": "1.0.17",
+    "version": "1.0.18",
     "description": "useful logger for node",
     "main": "index.js",
     "scripts": {
