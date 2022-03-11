@@ -2,12 +2,8 @@ const { format } = require("winston")
 const { white, red, green, magenta, cyan, yellow, rainbow, bold, grey } = require("colors/safe")
 const when_you_free = require("when_you_free")
 const myFormat = format.printf(({ level, message, timestamp, ...metadata }) => {
-    let readableTime;
-    if (timestamp) {
-        readableTime = when_you_free.format(timestamp, "LTS")
-        timestamp = grey(timestamp);
-        readableTime = grey(readableTime)
-    }
+    let date = when_you_free.format(new Date(), "MMMM Do YYYY, h:mm:ss a")
+    timestamp = grey(date)
     if (level) {
         if (level === "problem") {
             level = red.bold(level)
@@ -37,7 +33,7 @@ const myFormat = format.printf(({ level, message, timestamp, ...metadata }) => {
     }
 
 
-    let msg = `${readableTime} [${level}] : ${message}`
+    let msg = `${timestamp} [${level}] : ${message}`
     if (metadata) {
         msg += JSON.stringify(metadata)
     }
