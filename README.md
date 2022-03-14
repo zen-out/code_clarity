@@ -1,5 +1,6 @@
 # code_clarity
 
+[![here](https://github.com/zen-out/zen-out.github.io/blob/master/assets/images/code_clarity.png)](https://github.com/zen-out/zen-out.github.io/blob/master/assets/images/code_clarity.png)
 ## How do we make code straightfoward?
 
 ### Break things down, this is a bit like... writing. the more you do it, the better you get. 
