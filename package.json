@@ -20,7 +20,7 @@
     "license": "MIT",
     "dependencies": {
         "colors": "^1.4.0",
-        "when_you_free": "^1.2.1",
+        "when_you_free": "^1.4.2",
         "winston": "^3.6.0"
     },
     "devDependencies": {}
