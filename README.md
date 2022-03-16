@@ -1,4 +1,6 @@
 # code_clarity
+[code_clarity - start here](https://zen-out.github.io/packages/code_clarity)
+[![here](https://github.com/zen-out/zen-out.github.io/blob/master/assets/images/code_clarity.png)](https://github.com/zen-out/zen-out.github.io/blob/master/assets/images/code_clarity.png)# code_clarity
 
 [![here](https://github.com/zen-out/zen-out.github.io/blob/master/assets/images/code_clarity.png)](https://github.com/zen-out/zen-out.github.io/blob/master/assets/images/code_clarity.png)
 ## How do we make code straightfoward?
@@ -30,3 +32,117 @@ const {  see, hourglass } = require("code_clarity")
     // see.step("step")
     // see.motherlode("motherlode")
 ```
+
+In frontend... 
+ <script src="./node_modules/code_clarity/frontend/index.js"></script>
+    <script>
+        $(() => {
+            see.problem("it should do this", "location", "data")
+            see.is("data currently is", "location", "data")
+        })
+    </script>
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+![NPM Downloads](https://img.shields.io/npm/dw/code_clarity)
+## Instructions: 
+```npm install code_clarity ``` 
+ ``` const code_clarity =  require('code_clarity')```
+
+## If utilizing in html...: 
+```<script src="./node_modules/code_clarity/index.js"></script> ``` 
+ ``` const output =  code_clarity.method(parameter)```
+
+## Classes
+
+<dl>
+<dt><a href="#Logger">Logger</a> : <code><a href="#Logger">Logger</a></code></dt>
+<dd><p>Define the <code>Logger</code> class.</p>
+</dd>
+</dl>
+
+## Constants
+
+<dl>
+<dt><a href="#LOG_LEVEL">LOG_LEVEL</a> : <code>String</code></dt>
+<dd><p>Environment variables.</p>
+</dd>
+<dt><a href="#LEVELS">LEVELS</a> : <code>Object</code></dt>
+<dd><p>Log levels.</p>
+</dd>
+<dt><a href="#STYLES">STYLES</a> : <code>Object</code></dt>
+<dd><p>Log level styles.</p>
+</dd>
+<dt><a href="#METHODS">METHODS</a> : <code>Object</code></dt>
+<dd><p>Log level methods.</p>
+</dd>
+</dl>
+
+<a name="Logger"></a>
+
+## Logger : [<code>Logger</code>](#Logger)
+Define the `Logger` class.
+
+**Kind**: global class  
+
+* [Logger](#Logger) : [<code>Logger</code>](#Logger)
+    * [new Logger(options)](#new_Logger_new)
+    * [.log](#Logger+log)
+    * [.clone](#Logger+clone) ⇒ [<code>Logger</code>](#Logger)
+
+<a name="new_Logger_new"></a>
+
+### new Logger(options)
+Constructor.
+
+
+| Param | Type |
+| --- | --- |
+| options | <code>Object</code> | 
+
+<a name="Logger+log"></a>
+
+### logger.log
+Log to the console with `level`, `message` and `data`.
+
+**Kind**: instance property of [<code>Logger</code>](#Logger)  
+
+| Param | Type |
+| --- | --- |
+| level | <code>String</code> | 
+| message | <code>String</code> | 
+| data | <code>Object</code> | 
+
+<a name="Logger+clone"></a>
+
+### logger.clone ⇒ [<code>Logger</code>](#Logger)
+Create a new logger, extending the current logger's config.
+
+**Kind**: instance property of [<code>Logger</code>](#Logger)  
+
+| Param | Type |
+| --- | --- |
+| options | <code>Object</code> | 
+
+<a name="LOG_LEVEL"></a>
+
+## LOG\_LEVEL : <code>String</code>
+Environment variables.
+
+**Kind**: global constant  
+<a name="LEVELS"></a>
+
+## LEVELS : <code>Object</code>
+Log levels.
+
+**Kind**: global constant  
+<a name="STYLES"></a>
+
+## STYLES : <code>Object</code>
+Log level styles.
+
+**Kind**: global constant  
+<a name="METHODS"></a>
+
+## METHODS : <code>Object</code>
+Log level methods.
+
+**Kind**: global constant  
