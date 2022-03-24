@@ -10,3 +10,9 @@
 {"level":"end","message":"end","timestamp":"2022-03-24T05:35:48.281Z"}
 {"level":"start","message":"hello","timestamp":"2022-03-24T06:08:10.187Z"}
 {"level":"end","message":"end","timestamp":"2022-03-24T06:08:10.187Z"}
+{"level":"start","message":"hello","timestamp":"2022-03-24T06:18:43.925Z"}
+{"level":"end","message":"end","timestamp":"2022-03-24T06:18:43.925Z"}
+{"level":"start","message":"hello","timestamp":"2022-03-24T06:43:32.305Z"}
+{"level":"end","message":"end","timestamp":"2022-03-24T06:43:32.305Z"}
+{"level":"start","message":"hello","timestamp":"2022-03-24T06:54:03.485Z"}
+{"level":"end","message":"end","timestamp":"2022-03-24T06:54:03.485Z"}
