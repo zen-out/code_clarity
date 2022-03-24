@@ -1,2 +1,2 @@
-const { see, hourglass } = require("./dist/loggers")
+const { see, hourglass } = require("./dist")
 module.exports = { see, hourglass }

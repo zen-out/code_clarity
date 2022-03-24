@@ -1,58 +1,23 @@
 # code_clarity
-[code_clarity - start here](https://zen-out.github.io/packages/code_clarity)
 
-
-![terminal](https://dl.dropbox.com/s/zl8z7vm0z53ho0b/terminal.png)
-![files](https://dl.dropbox.com/s/j3dc9g93e6lecqq/files.png)
-
-
-
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+![NPM Downloads](https://img.shields.io/npm/dw/code_clarity)
+[Play with docs](https://zen-out.github.io/modules/code_clarity.html)
 ## Instructions: 
-```npm install code_clarity ``` 
 
 ```js
-const {  see, hourglass } = require("code_clarity")
-    // hourglass.start("starting module")
-    // hourglass.end("ending module")
-    // see.problem("hi")
-    // see.problem("not being able to print out log messages in root folder")
-    // see.should("should be able to specify a root directory")
-    // see.story("hi")
-    // see.should("hi")
-    // see.is("hi")
-    // see.how("how")
-    // see.step("step")
-    // see.motherlode("motherlode")
+npm install code_clarity
+const code_clarity =  require('code_clarity')
+```
+
+## If utilizing in html...: 
+```html
+<script src="./node_modules/code_clarity/index.js"></script>
+<script> 
+$(()=> { 
+     const output =  code_clarity.method(parameter)
+ })
+</script>
 ```
 
 
-
-## If utilizing in html...: 
-
-- [ ] add script tag for jquery
-
-![html](https://github.com/zen-out/zen-out.github.io/blob/master/assets/images/code_clarity.png)
-```html
-<script src="./node_modules/code_clarity/frontend/index.js"></script>
-    <script>
-        $(() => {
-            see.problem("it should do this", "location", "data")
-            see.is("data currently is", "location", "data")
-        })
-    </script>
-     ``` 
-## The only methods available in frontend are see.problem, see.should and see.is
- ```js
-  see.problem("hello")
-  ```
-
-## How do we make code straightfoward?
-
-### Break things down, this is a bit like... writing. the more you do it, the better you get. 
-
-### slow down. it takes a while. practice the right things. draw out the outline of the code. study the architecture and the organization. 
-
-Let's say this is a presentation, how would you do it? 
-
-- think with the end goal in mind: writing out the commands that you would implement 
-    e.g., chance
